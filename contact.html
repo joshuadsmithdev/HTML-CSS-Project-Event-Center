@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -19,20 +20,27 @@
 
     <section class="contact">
         <h2>Contact Us</h2>
-        <p>We’d love to hear from you! Send us a message below:</p>
+        <p>Feel free to reach out!</p>
 
-        <form>
+        
+
+        <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error" id="messageError"></span>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
         </form>
+
+        <div id="submissionResult"></div> <!-- Displays simulated submission results -->
     </section>
 </body>
 </html>

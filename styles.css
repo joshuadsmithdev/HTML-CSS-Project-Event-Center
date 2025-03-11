@@ -1,11 +1,11 @@
 body {
     font-family: 'Garamond', serif;
-    background-color: #f4e4c1;
-    background-image: url('https://media.istockphoto.com/id/171159408/photo/high-resolution-ancient-animal-skin-parchment-vignette-grunge-texture.jpg?s=612x612&w=0&k=20&c=EBWi4m0pbeG9s1_5FrKatjx7UZQoSJ_Dbho5D_MmqmY=parchment-texture.jpg'), url('https://media.istockphoto.com/id/157591528/photo/gold-colored-background-texture.jpg?s=612x612&w=0&k=20&c=QzJWJrCyRQexlrEzCqoaQ0-X9EeYPq9JH-_-9lAatbQ=');
+    background-color: rgba(255, 248, 225, 0.2);
+    background-image: url('assets/images/pergament-papier-alt-vintage.jpg');
     background-size: cover, 800px;
     background-blend-mode: multiply;
     background-attachment: fixed;
-    color: #5328b8;
+    color: #001f3f;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #001f3f;
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
@@ -46,11 +46,11 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #d4af7a;
+    background-color: rgba(255, 248, 225, 0.2);
     border: 5px double #8b5e3c;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background: none;
-    color: #5328b8; /* Deep Renaissance blue */
+    color: #001f3f; /* Deep Renaissance blue */
     text-shadow: 3px 3px 8px rgba(255, 223, 186, 0.8); /* Soft golden shadow */
     font-weight: bold;
 }
@@ -102,7 +102,7 @@ nav ul li a:hover {
 
 .event-card h2 {
     background-color: rgba(255, 248, 225, 0.2);
-    color: #5328b8;
+    color: #001f3f;
     padding: 10px 0;
     margin: 0;
     font-style: italic;
@@ -165,7 +165,7 @@ footer {
 .menu-details h3 {
     margin: 0;
     font-size: 22px;
-    color: #5328b8;
+    color: #001f3f;
     border-bottom: 2px solid #8b5e3c;
     display: inline-block;
     padding-bottom: 5px;
@@ -179,7 +179,7 @@ footer {
 .price {
     font-size: 20px;
     font-weight: bold;
-    color: #5328b8;
+    color: #001f3f;
     margin-left: auto;
 }
 .contact {
@@ -230,6 +230,18 @@ footer {
     transition: background 0.3s;
 }
 
-.contact button:hover {
+.contact button:focus {
+    outline: 3px solid #f4e4c1;
     background-color: #5a3e1b;
+}
+
+@media (max-width: 768px) {
+    .menu-card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-card img {
+        margin-bottom: 10px;
+    }
 }
