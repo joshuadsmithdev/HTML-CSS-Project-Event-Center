@@ -1,0 +1,51 @@
+{
+    "events": [
+        {
+            "name": "Royal Banquet Night",
+            "date": "2025-06-15",
+            "description": "An evening of feasting and entertainment with live Renaissance music and performances."
+        },
+        {
+            "name": "Masquerade Ball",
+            "date": "2025-07-22",
+            "description": "Dance the night away in elegant Renaissance attire at our grand masquerade ball."
+        },
+        {
+            "name": "Jousting Tournament",
+            "date": "2025-08-10",
+            "description": "Experience the thrill of medieval jousting with knights competing for glory."
+        }
+    ],
+    "menu": [
+        {
+            "category": "Appetizers",
+            "items": [
+                {"name": "Roasted Chestnuts", "price": "$5"},
+                {"name": "Stuffed Mushrooms", "price": "$7"}
+            ]
+        },
+        {
+            "category": "Mains",
+            "items": [
+                {"name": "Herb-Crusted Roast Chicken", "price": "$15"},
+                {"name": "Venison Stew", "price": "$18"}
+            ]
+        },
+        {
+            "category": "Desserts",
+            "items": [
+                {"name": "Honeyed Tarts", "price": "$6"},
+                {"name": "Spiced Mead Cake", "price": "$8"}
+            ]
+        }
+    ],
+    "location": {
+        "address": "123 Renaissance Way, Historic Town, HT 56789",
+        "hours": "Monday - Sunday: 12 PM - 11 PM",
+        "landmarks": ["Near King’s Castle", "Beside the Grand Market Square"]
+    },
+    "contact": {
+        "email": "info@renaissanceeventcenter.com",
+        "phone": "(555) 123-4567"
+    }
+}
