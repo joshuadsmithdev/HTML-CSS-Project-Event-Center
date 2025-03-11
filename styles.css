@@ -1,68 +1,11 @@
 body {
     font-family: 'Garamond', serif;
-    background-color: #f5e1c8;
-    color: #4a2c2a;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #6d4c3d;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #f5e1c8;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    color: #6d4c3d;
-    background-color: #f5e1c8;
-}
-
-.hero {
-    background: url('renaissance-banner.jpg') no-repeat center center/cover;
-    text-align: center;
-    padding: 100px 20px;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.hero img {
-    width: 25%;
-    max-height: 400px;
-    object-fit: cover;
-    border-bottom: 4px solid #8b5e3c;
-}
-
-
-footer {
-    background-color: #6d4c3d;
-    color: #f5e1c8;
-    text-align: center;
-    padding: 10px;
-}
-body {
-    font-family: 'Garamond', serif;
     background-color: #f4e4c1;
-    color: #5a3e1b;
+    background-image: url('https://media.istockphoto.com/id/171159408/photo/high-resolution-ancient-animal-skin-parchment-vignette-grunge-texture.jpg?s=612x612&w=0&k=20&c=EBWi4m0pbeG9s1_5FrKatjx7UZQoSJ_Dbho5D_MmqmY=parchment-texture.jpg'), url('https://media.istockphoto.com/id/157591528/photo/gold-colored-background-texture.jpg?s=612x612&w=0&k=20&c=QzJWJrCyRQexlrEzCqoaQ0-X9EeYPq9JH-_-9lAatbQ=');
+    background-size: cover, 800px;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #5328b8;
     margin: 0;
     padding: 0;
 }
@@ -71,6 +14,7 @@ header {
     background-color: #8b5e3c;
     padding: 15px 0;
     text-align: center;
+    border-bottom: 5px solid #5a3e1b;
 }
 
 nav ul {
@@ -103,6 +47,21 @@ nav ul li a:hover {
     text-align: center;
     padding: 50px 20px;
     background-color: #d4af7a;
+    border: 5px double #8b5e3c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: none;
+    color: #5328b8; /* Deep Renaissance blue */
+    text-shadow: 3px 3px 8px rgba(255, 223, 186, 0.8); /* Soft golden shadow */
+    font-weight: bold;
+}
+
+.event-card, .menu-card {
+    background-color: rgba(255, 248, 225, 0.2); /* Semi-transparent parchment effect */
+    border: 3px solid #8b5e3c;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .events {
@@ -111,17 +70,23 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    border: 10px solid #5a3e1b;
+    background:  rgba(255, 248, 225, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .event-card {
-    background-color: #fff8e1;
-    border: 2px solid #8b5e3c;
+    background-color:  rgba(255, 248, 225, 0.2);
+    border: 3px solid #8b5e3c;
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
 .event-card:hover {
@@ -132,17 +97,20 @@ nav ul li a:hover {
 .event-card img {
     width: 100%;
     height: auto;
+    border-bottom: 3px solid #8b5e3c;
 }
 
 .event-card h2 {
-    background-color: #8b5e3c;
-    color: #fff;
+    background-color: rgba(255, 248, 225, 0.2);
+    color: #5328b8;
     padding: 10px 0;
     margin: 0;
+    font-style: italic;
 }
 
 .event-card p {
     padding: 10px;
+    font-size: 16px;
 }
 
 footer {
@@ -151,59 +119,66 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    border-top: 5px solid #5a3e1b;
 }
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.menu-section {
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .menu-category {
-    width: 80%;
-    margin-bottom: 30px;
     text-align: center;
-}
-
-.menu-category h2 {
-    background-color: #8b5e3c;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .menu-card {
     display: flex;
     align-items: center;
-    background-color: #fff8e1;
-    border: 3px solid #5a3e1b;
+    background-color:  rgba(255, 248, 225, 0.2);
+    border: 4px solid #8b5e3c;
     border-radius: 10px;
     padding: 15px;
-    margin: 15px 0;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin: 0 auto 20px auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .menu-card:hover {
-    transform: scale(1.03);
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .menu-card img {
     width: 100px;
     height: 100px;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: 3px solid #5a3e1b;
     margin-right: 15px;
-    border: 2px solid #5a3e1b;
 }
 
-.menu-info {
-    flex: 1;
+.menu-details {
+    flex-grow: 1;
     text-align: left;
 }
 
+.menu-details h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #5328b8;
+    border-bottom: 2px solid #8b5e3c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
 .price {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: #8b5e3c;
+    color: #5328b8;
+    margin-left: auto;
 }
