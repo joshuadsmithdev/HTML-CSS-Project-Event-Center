@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feast of the Realm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Feast of the Realm</h1>
+            <p>A grand selection of medieval delicacies to satisfy your hunger and quench your thirst!</p>
+        </section>
+
+        <section class="menu">
+            <h2>Our Menu</h2>
+
+            <!-- Snacks Table -->
+            <h3>Snacks</h3>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="menu-card">
+                                <img src="https://media.istockphoto.com/id/172156387/photo/turkish-baklava-ii.jpg?s=612x612&w=0&k=20&c=MTQ7gKwJKvhtHX2-_lYUPdZ2pRHzKNxixiTp1WDSYqo=" alt="Snack">
+                                <h3>Honeyed Nuts</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <p>Roasted almonds drizzled with golden honey and spices.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <button class="order-btn" onclick="orderItem('Honeyed Nuts', 5)">5 gold coins</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="menu-card">
+                                <img src="https://media.istockphoto.com/id/937723122/photo/fresh-traditional-australian-meat-mini-pie-on-the-wooden-board-on-table-background-closeup.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ez_JVDF7X3Lalla8HGK3gd6AVsF8-hfI-G1V3JPgdGE=" alt="Meat Pies">
+                                <h3>Meat Pies</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <p>Flaky pastries filled with spiced meat and vegetables.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <button class="order-btn" onclick="orderItem()">7 gold coins</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Lunch & Dinner Table -->
+            <h3>Lunch & Dinner</h3>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="menu-card">
+                                <img src="https://media.istockphoto.com/id/1094639270/photo/piece-of-roasted-meat-of-wild-boar.jpg?s=612x612&w=0&k=20&c=uolFioLIENKp-6_SF98cKyu1pyvRE-t_GVwEjDFK3es=" alt="Meal">
+                                <h3>Roasted Boar</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <p>Slow-roasted boar served with garlic-infused potatoes.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <button class="order-btn" onclick="orderItem()">15 gold coins</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="menu-card">
+                                <img src="https://media.istockphoto.com/id/506166900/photo/homemade-soup-with-lentils-and-sausages.jpg?s=612x612&w=0&k=20&c=3BxIs93rBpJWIwGr5z5jFTPS6svztVxZ9MNj9suvAFA=" alt="Meal">
+                                <h3>Pottage Stew</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <p>A hearty mix of vegetables, beans, and meats in a rich broth.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <button class="order-btn" onclick="orderItem()">10 gold coins</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Drinks Table -->
+            <h3>Drinks</h3>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Drink</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="menu-card">
+                                <img src="https://media.istockphoto.com/id/1129803979/photo/sbiten-hot-honey-drink-with-herbes-and-spices-russian-tradition.jpg?s=612x612&w=0&k=20&c=s7ieT3QF0yAUZ9T3phiP3R7jit30GNET4k3O3ifm5fc=" alt="Drink">
+                                <h3>Honey Mead</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <p>A sweet fermented honey drink, fit for royalty.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <button class="order-btn" onclick="orderItem()">6 gold coins</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="menu-card">
+                                <img src="https://media.istockphoto.com/id/1080386996/photo/mulled-wine-with-orange-cinnamon-star-anise-and-spices-for-christmas.jpg?s=612x612&w=0&k=20&c=ZJ9J7uSzh7VWTAYhHH7uYFjBbl_TU4UjhowsD34r6_M=" alt="Drink">
+                                <h3>Spiced Wine</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <p>Warm red wine infused with cinnamon and cloves.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="menu-card">
+                                <button class="order-btn" onclick="orderItem()">8 gold coins</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Renaissance Event Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
